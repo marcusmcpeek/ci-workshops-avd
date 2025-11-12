@@ -90,6 +90,15 @@ local_users:
   sha512_password: $6$arista$VmpwU307Tn8KyNnfkh/VXNJTMw0MwyD6OIDJ5/t7axt5hoWBv8wNdi3jbpe.26FnXV/qNmPJ6fBmCI9FId6Yb/
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDw02ePKk06h9yTmGxStVfAGHOWEX9wLzgMNWeTeqM9bUIHLpRpVm8jqZgmmwRwS9pHtOO83BsL4aTSesTMcBqUFE11rrO4DEJEDq98Coe73v/my7XRHE9/BJEP7c2cjB/AFw2fwVmLNb7CLcVhG18yltEcTsVn6Hht/YQx1u6CZOX+1C1+TNGsIO1RHuhezDdWQ6x/VuxYj47eXwx1eT/ju6bzVXkIh87CAISdSybnqzfhbTNqZn5hzD82KlZDOqzhhxXU+KPu5ySIzPh65dFegZ9htucJ2nxOXmJ/xhfxAVqOCN+swfrHO2hXvak74wDp1gPl66cYNxbgTqu08SSN
     arista@mckesson-training-5-114a6d93-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
