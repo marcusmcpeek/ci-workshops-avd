@@ -90,6 +90,15 @@ local_users:
   sha512_password: $6$arista$aEAv7WL/NEJF928o7xi00VYgslpngRTWGNcygnujQ.ZEeij9c9OxiJxg1SAjpo2Kfru2xxsN4zgy3PlSGFWzL.
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmLykkVVh80SAPKDz0VsB7MIwPM2PXADhQUHv2f2NpMbdlTvB1/na7iADtLjplavUKVVld0+ge+O3jRgo6idwkQMEZto1WVoQ8B2FXQLXKjuYc1kTuTTS5cG2NL8ArcokfX6cP3eUbXkYhpfv/wGLgjA/DwTVul25KNhWEQncrJEjP5hr8B4VFoCjz9TCOB2NEotpbjOOrnCZU7dh1RuKHs2FGYgj03r0OR5wb2RJCqr/GF43RWI3CLUICamMjOw0qSExVI+NHNCkxWAkzintT2g4L33qISe0ALEA0RacrGaYvNIszPXxOy83u1STgAzAK0D9cpqkCxwCDUlOlufnP
     arista@automationws-1-848a3b0d-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
